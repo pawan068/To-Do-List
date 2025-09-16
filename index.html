@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="todoheading">
+            <h1>To-do</h1>
+        </div>
+<!-- ///////////////////////////// -->
+
+        <div class="todoitems" id="todoitems">
+
+            <p id="desc">A <b>To-Do List is like your personal task manager</b>. It helps you plan, remember, and complete tasks in an organized way, whether for studies, work, or daily life.</p>
+            
+        </div>
+
+<!-- /////////////////////////// -->
+        <div class="todonew" id="todonew">
+            <button onclick="addnew()">Add New</button>
+        </div>
+
+    </div>
+
+<!-- ////////////////////////////     -->
+<div class="todoinput" id="todoinput">
+    <div class="inputadddiv">
+        <input type="text" id="input" placeholder="Enter Your Task">
+        <button id="new" onclick="addition()">Add</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

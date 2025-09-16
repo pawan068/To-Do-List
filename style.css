@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(320deg , rgb(162, 81, 162),rgb(66, 66, 167),rgb(25, 129, 170));
+    border: white;
+    padding: 10px;
+}
+@media(max-width:500px){
+    
+    .container{
+        height: 80%;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 0.2px;
+        background: linear-gradient(320deg,pink,rgb(255, 240, 240),rgb(248, 204, 248),rgb(255, 208, 216));
+         padding: 10px;
+        
+    }
+    .todoheading{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 40px;
+        border-bottom: solid black;
+    }
+    .todoitems{
+        height: 80%;
+        width: 100%;
+        margin: 10px 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0px;
+        padding: 5px;
+    }
+    .todoitem{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0px;
+    }
+    .item{
+        width: 80%;
+        height: 100%;
+        border: none;
+        font-size: 1.4rem;
+        padding: 0px 8px;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+         background-color: rgb(198, 197, 197);
+    }
+    .item-btn{
+        width: 20%;
+        height: 100%;
+        font-size: 1.4rem;
+        background-color: rgb(222, 111, 111);
+        border: solid grey;
+        color: white;
+    }
+    .item-btn:hover{
+        background-color: rgb(255, 125, 125);
+    }
+    .todonew{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .todonew button{
+        padding: 7px 15px;
+        border-radius: 10px;
+        background-color: green;
+        color: white;
+        box-shadow: 0 0 2px black;
+        
+    }
+    .todoinput{
+        height: 0vh;
+        width: 0vw;
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        transition: all 2s ease;
+    }
+    .todoinputtog{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(223, 215, 215, 0.365);
+        backdrop-filter: blur(1px);
+    }
+    .inputadddiv{
+        width: 80%;
+        height: 4%;
+        display: flex;
+    }
+    .todoinput input{
+        width: 80%;
+        height: 100%;
+        font-size: 1.5rem;
+        border: solid 0.2px;
+    }
+    .todoinput button{
+        width: 20%;
+        height: 100%;
+    }
+      #desc{
+    letter-spacing: 5px;
+    line-break: loose;
+    margin-top: 30%;
+   }
+}
+@media(min-width:500px){
+    .container{
+        height: 80vh;
+        width: 500px;
+        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 0.2px;
+        border-radius: 10px;
+         background: linear-gradient(320deg,pink,rgb(255, 240, 240),rgb(248, 204, 248),rgb(255, 208, 216));
+        padding: 10px;
+    }
+    .todoheading{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 40px;
+        border-bottom: solid black;
+    }
+    .todoitems{
+        height: 80%;
+        width: 100%;
+        margin: 10px 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0px;
+        padding: 5px;
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+    .todoitem{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0px;
+        border: none;
+    }
+    .item{
+        width: 80%;
+        height: 100%;
+        font-size: 1.4rem;
+        padding: 0px 8px;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: rgb(198, 197, 197);
+    }
+    .item-btn{
+        width: 20%;
+        height: 100%;
+        font-size: 1.4rem;
+        padding: 5px 9px;
+       border: none;
+        background-color: rgb(222, 111, 111);
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+
+    }
+    .todonew{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .todonew button{
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 0 2px black;
+    }
+    .todoinput{
+        height: 0vh;
+        width: 0vw;
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        transition: all 2s ease;
+        border: none;
+    }
+    .todoinputtog{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(223, 215, 215, 0.365);
+        backdrop-filter: blur(1px);
+    }
+    .inputadddiv{
+        width: 400px;
+        height: 50px;
+        display: flex;
+        border: solid grey 0.4px;
+    }
+    .todoinput input{
+        width: 80%;
+        height: 100%;
+        font-size: 1.5rem;
+        border: solid 0.2px;
+        border-right: none;
+        border: none;
+        outline: none;
+        padding: 0px 10px;
+
+    }
+    .todoinput button{
+        width: 20%;
+        height: 100%;
+        border: solid grey 0.2px;
+        background-color: green;
+        color: white;
+        font-size: 1.5rem;
+        border-left: none;
+        cursor: pointer;
+        border-top-right-radius: 5px;
+    }
+   #desc{
+    letter-spacing: 5px;
+    line-break: loose;
+    margin-top: 30%;
+   }
+}
