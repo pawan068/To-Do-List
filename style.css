@@ -24,7 +24,7 @@ body{
         justify-content: center;
         align-items: center;
         border: solid 0.2px;
-        background: linear-gradient(320deg,pink,rgb(255, 240, 240),rgb(248, 204, 248),rgb(255, 208, 216));
+        background: white;
          padding: 10px;
         
     }
@@ -127,15 +127,15 @@ body{
 @media(min-width:500px){
     .container{
         height: 80vh;
-        width: 500px;
-        max-width: 90vw;
+        max-width: 500px;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border: solid 0.2px;
         border-radius: 10px;
-         background: linear-gradient(320deg,pink,rgb(255, 240, 240),rgb(248, 204, 248),rgb(255, 208, 216));
+         background: white;
         padding: 10px;
     }
     .todoheading{
@@ -255,3 +255,4 @@ body{
     margin-top: 30%;
    }
 }
+
