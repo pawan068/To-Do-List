@@ -130,8 +130,7 @@ body{
 @media(min-width:500px){
     .container{
         height: 80vh;
-        width: 500px;
-        max-width: 90vw;
+        max-width:500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -262,3 +261,4 @@ body{
     word-spacing: 10px;
    }
 }
+
